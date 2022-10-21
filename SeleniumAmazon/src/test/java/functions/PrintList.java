@@ -89,7 +89,6 @@ public class PrintList extends AbstractPage {
     double finalPrice = Double.valueOf(res);
 	listAll a= new listAll(driver);
     List<Double> finalPriceList = a.listPrices(j);
-	// Verify the price on cart is like the Product we selected
     boolean condicion1 = (finalPrice == finalPriceList.get(j));
     AssertUtils.assertTrue(condicion1, "Se valido correctamente el precio: "+finalPriceList.get(j));
 
